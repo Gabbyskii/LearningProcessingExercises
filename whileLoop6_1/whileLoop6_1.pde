@@ -1,3 +1,4 @@
+//loop linjerne
 /*void setup() {
 size (200, 200); 
 background (255); 
@@ -13,6 +14,7 @@ y = y + 20;
 }
 }*/
 
+//loop cirklen:
 float w = 0;
 
 void setup(){
