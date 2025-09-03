@@ -8,7 +8,7 @@ background(255);
 //y = 50+25 || 50*6 (antal bokse)
 void draw(){
  rectMode(CENTER);
- 
+ fill(255, 255, 25);
  rect(width/2,100,75,50);
 
  rect(width/2,150,125,50);
