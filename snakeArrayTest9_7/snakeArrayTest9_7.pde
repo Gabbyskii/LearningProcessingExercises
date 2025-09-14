@@ -1,28 +1,20 @@
-// Array to hold multiple snakes
-Snake[] snakes;
+// Single snake
+Snake snake;
 
 void setup() {
-  size(400, 400);
+  size(200, 200);
   smooth();
   
-  // Create 3 snakes with different properties
-  snakes = new Snake[3];
-  snakes[0] = new Snake(color(255, 0, 0), 50, 12);    // red, 50 segments, size 12
-  snakes[1] = new Snake(color(0, 255, 0), 30, 8);     // green, 30 segments, size 8
-  snakes[2] = new Snake(color(155,00,155), 40, 16);    // blue, 40 segments, size 16
+  // Create one purple snake
+  snake = new Snake(color(128, 0, 128), 50, 30);
 }
 
 void draw() {
   background(255);
   
-  // Update and display all snakes with slight offsets
-  snakes[0].update(mouseX, mouseY);           // purple follows mouse
-  snakes[1].update(mouseX - 30, mouseY - 30); // black offset
-  snakes[2].update(mouseX + 20, mouseY + 20); // dark blue offset
-  
-  for (int i = 0; i < snakes.length; i++) {
-    snakes[i].display();
-  }
+  // Update and display the snake
+  snake.update(mouseX, mouseY);
+  snake.display();
 }
 
 // Snake Class
