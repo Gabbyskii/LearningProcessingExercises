@@ -18,7 +18,7 @@ void draw() {
     stroke(255);
   }
   
-  fill(175);
+  fill(155);
   rect(x, y, w, h);
 }
 
