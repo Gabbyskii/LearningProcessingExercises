@@ -1,17 +1,23 @@
 //int[] monthsInDays;
 //int monthsInDaysINDEX;????
 
-int number = 12;
-int[]  monthsInDays= new int[number];
+int number = 5;
+int[] monthsInDays= new int[number];
 monthsInDays[0] = 31;
 monthsInDays[1] = 28;
 monthsInDays[2] = 31;
 monthsInDays[3] = 30;
+monthsInDays[4] = 30;
 
-//println(monthsInDays[0].length-1));
+//printer den første:
+println(monthsInDays[0]);
+//printer den sidste array:
+println(monthsInDays[monthsInDays.length-1]);
+
+
 
 //printer den første og sidste array:
-println(monthsInDays[0], monthsInDays[3]);
+//println(monthsInDays[0], monthsInDays[3]);
 //eller seperat: println(monthsInDays[3], 
 
 
